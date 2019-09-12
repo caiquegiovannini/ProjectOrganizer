@@ -1,0 +1,45 @@
+.container {
+    width: 700px;
+    margin: auto;
+}
+
+.project-title {
+    text-align: center;
+    border: solid;
+    margin: 20px auto;
+}
+
+.project-description {
+    text-align: center;
+    border: solid;
+    height: 200px;
+    margin: 20px auto;
+}
+
+.execution {
+    margin: 20px auto;
+}
+
+.project-issues {
+    width: 300px;
+    float: left;
+    text-align: center;
+    border: solid;
+    height: 300px;
+    margin: auto 20px;
+}
+
+.project-issues li {
+    list-style-type: none;
+    text-align: left;
+    padding: 5px 0;
+}
+
+.project-rules {
+    width: 300px;
+    float: right;
+    text-align: center;
+    border: solid;
+    height: 300px;
+    margin: auto 20px;
+}
