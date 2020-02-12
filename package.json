@@ -2,7 +2,7 @@
   "name": "project-organizer",
   "version": "1.0.0",
   "description": "",
-  "main": "server.js",
+  "main": "src/server.js",
   "scripts": {
     "start": "npm-run-all -p nodemon browsersync",
     "nodemon": "nodemon server.js",
@@ -10,15 +10,15 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/caiquegiovannini/ProjectOrganizer.git"
+    "url": "git+https://github.com/caiquegiovannini/project-organizer.git"
   },
   "keywords": [],
   "author": "Caique Giovannini",
   "license": "ISC",
   "bugs": {
-    "url": "https://github.com/caiquegiovannini/ProjectOrganizer/issues"
+    "url": "https://github.com/caiquegiovannini/project-organizer/issues"
   },
-  "homepage": "https://github.com/caiquegiovannini/ProjectOrganizer#readme",
+  "homepage": "https://github.com/caiquegiovannini/project-organizer#readme",
   "dependencies": {
     "express": "^4.17.1",
     "nunjucks": "^3.2.0"

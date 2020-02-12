@@ -1,0 +1,72 @@
+{% extends 'layout.njk' %}
+
+{% block content %}
+
+    <header>
+        <div class="container">
+            <button type="submit">Salvar</button>
+            <span class="progress">-----</span>
+            <button type="">Carregar</button>
+        </div>
+    </header>
+
+    <div class="preparation container">
+
+        <section class="project-title creation">
+            <input 
+                type="text"
+                name="title"
+                placeholder="Título do projeto"
+            />    
+        </section>
+
+        <section class="project-description creation" id="description">
+            <textarea 
+                name="description"
+                placeholder="Descrição do projeto"></textarea>
+        </section>
+        
+        <section class="project-outline">
+            <input type='file'/><br>
+            <img id="myImg" src="#" alt="esboço">
+        </section>
+
+    </div>    
+
+    <section class="execution container">
+
+        <div class="project-issues">
+            <h2>Etapas</h2>
+            <div class="issue">
+                <input 
+                    type="text"
+                    name="issues[]"
+                    value=""   
+                    placeholder="Nova etapa"
+                >
+            </div>
+            <button
+                type="button" 
+                class="add-issue"
+                onclick="AddItem.newIssue()"
+            >Adicionar</button>
+        </div>
+
+        <div class="project-rules">
+            <h2>Considerações</h2>
+        </div>
+
+    </section>
+
+    <div class="load-overlay">
+        <div class="load">
+            <div class="close-load">
+                <a>Fechar</a>
+            </div>    
+            <div class="load-content">
+
+            </div>
+        </div>
+    </div>
+
+{% endblock %}
